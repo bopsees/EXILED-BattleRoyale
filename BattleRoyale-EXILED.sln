@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleRoyale-EXILED", "BattleRoyale-EXILED\BattleRoyale-EXILED.csproj", "{98B2426B-A135-4C7A-8CDE-A5546DCB2E9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98B2426B-A135-4C7A-8CDE-A5546DCB2E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B2426B-A135-4C7A-8CDE-A5546DCB2E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B2426B-A135-4C7A-8CDE-A5546DCB2E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B2426B-A135-4C7A-8CDE-A5546DCB2E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
