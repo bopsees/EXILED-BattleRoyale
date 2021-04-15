@@ -42,7 +42,6 @@ namespace BattleRoyale_EXILED
 
             Player.Left += player.OnLeft;
             Player.Joined += player.OnJoin;
-            Player.InteractingDoor += player.OnInteractDoor;
         }
 
         public void UnregisterEvents()
@@ -52,7 +51,6 @@ namespace BattleRoyale_EXILED
 
             Player.Left -= player.OnLeft;
             Player.Joined -= player.OnJoin;
-            Player.InteractingDoor -= player.OnInteractDoor;
 
             player = null;
             server = null;

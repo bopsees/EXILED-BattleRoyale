@@ -59,6 +59,9 @@
         <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\Downloads\Exiled.tar\Exiled\EXILED\Plugins\Exiled.Updater.dll</HintPath>
         </Reference>
+        <Reference Include="Points, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\Downloads\0Points.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />

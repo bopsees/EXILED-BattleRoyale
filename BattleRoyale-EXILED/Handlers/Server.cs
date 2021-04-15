@@ -1,4 +1,8 @@
-﻿using Exiled.API.Features;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
+using Exiled.API.Features;
+using ArithFeather.Points;
+using ArithFeather.Points.DataTypes;
 
 namespace BattleRoyale_EXILED.Handlers
 {
@@ -11,8 +15,19 @@ namespace BattleRoyale_EXILED.Handlers
 
         public void OnRoundStart()
         {
-            Log.Info("[BATTLE ROYALE] - Game Starting");
-            Map.Broadcast(5, BattleRoyale.instance.Config.RoundStartedMessage);
+            PointList pList = ArithFeather.Points.Points.GetPointList("gun");
+            List<FixedPoint> fList = pList.FixedPoints;
+            for (int i = 0; i < fList.Count; i++)
+            {
+                Log.Info(fList[i]);
+            }
+            Round.IsLocked = true;
+            foreach (Exiled.API.Features.Player player in Exiled.API.Features.Player.List)
+            {
+                player.AddItem(ItemType.KeycardO5);
+                player.Role = RoleType.ClassD;
+                Map.Broadcast(5, BattleRoyale.instance.Config.RoundStartedMessage);
+            }
         }
     }
 }
